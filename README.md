@@ -109,3 +109,4 @@ Generates a 10-point time-series projection from initial detection down to close
 
 ### 3. `GET /api/stats`
 Retrieves model metrics, feature importances, and Space-Track TLE telemetry statistics.
+## Deployed Link:-https://astroguard-ai.vercel.app/
