@@ -1,0 +1,67 @@
+{
+  "model_name": "AstroGuard Random Forest Conjunction Classifier",
+  "version": "1.2.0",
+  "algorithm": "Random Forest Classifier (scikit-learn)",
+  "n_estimators": 120,
+  "max_depth": 14,
+  "metrics": {
+    "accuracy": 99.96,
+    "precision": 99.96,
+    "recall": 99.96,
+    "f1_score": 99.96,
+    "test_samples": 5000
+  },
+  "feature_importances": [
+    {
+      "feature": "Miss Distance",
+      "key": "distance",
+      "weight": 84.7,
+      "unit": "km"
+    },
+    {
+      "feature": "Time to Approach",
+      "key": "time_to_approach",
+      "weight": 14.0,
+      "unit": "min"
+    },
+    {
+      "feature": "Relative Speed",
+      "key": "relative_speed",
+      "weight": 1.2,
+      "unit": "km/s"
+    },
+    {
+      "feature": "Inclination Diff",
+      "key": "inclination_diff",
+      "weight": 0.1,
+      "unit": "deg"
+    }
+  ],
+  "confusion_matrix": [
+    [
+      1715,
+      1,
+      0
+    ],
+    [
+      0,
+      2407,
+      1
+    ],
+    [
+      0,
+      0,
+      876
+    ]
+  ],
+  "dataset_stats": {
+    "source": "Hugging Face Space-Track TLE & Orbital Mechanics Telemetry",
+    "sample_size": 50000,
+    "active_tracked_objects": 36500,
+    "leo_objects_pct": 74.2,
+    "meo_objects_pct": 8.5,
+    "geo_objects_pct": 17.3,
+    "avg_orbital_velocity_kms": 7.62,
+    "monthly_conjunction_events": 4820
+  }
+}
